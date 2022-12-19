@@ -1,0 +1,88 @@
+@use "sass:math";
+@import "./mixins/reset.scss";
+@import "~poly-fluid-sizing";
+
+$basePxDp: 20;
+$baseWidthDp: 1920;
+$baseHeightDp: 1080;
+$maxWidthDp: 1920;
+
+// add
+$basePxMb: 16;
+$baseWidthMb: 375;
+$baseHeightMb: 667;
+
+@function rem($px, $mobile: false) {
+    $base: if($mobile == true, $basePxMb, $basePxDp);
+
+    // @return #{math.div($px, $base)}rem;
+    @return calc((#{$px} * var(--font-size)) / #{$base});
+}
+
+@function em($px, $ref) {
+    @return #{math.div($px, $ref)}em;
+}
+
+@function vw($px, $mobile: false, $clicker: false) {
+    $base: if($mobile == true, $baseWidthMb, $baseWidthDp);
+
+    @if $clicker == true {
+        $base: if($mobile == true, $baseWidthMb, $baseWidthClickerDp);
+    }
+
+    @return #{math.div(100 * $px, $base)}vw;
+}
+
+@function vh($px, $mobile: false, $clicker: false) {
+    $base: if($mobile == true, $baseHeightMb, $baseHeightDp);
+
+    @if $clicker == true {
+        $base: if($mobile == true, $baseWidthMb, $baseHeightClickerDp);
+    }
+
+    @return #{math.div($px * 100, $base)}vh;
+}
+
+@function vwvh($px, $mobile: false, $clicker: false) {
+    $vw: vw($px, $mobile, $clicker);
+    $vh: vh($px, $mobile, $clicker);
+
+    // very cool kostyl coz sass is case-sensitive, but css isn't
+    @return Min(#{$vw}, #{$vh});
+}
+
+@mixin font-size {
+    // *
+    // * The basic font size for articles content and basic ui-elements
+    // *
+    $mapFontSize: (
+        560px: 16px,
+        850px: 16px,
+        852px: 20px,
+        960px: 20px,
+        1440px: 20px,
+        1920px: 20px
+    );
+    $mapFontSizePt: (
+        280px: 13px,
+        375px: 16px,
+        425px: 16px,
+        1024px: 16px
+    );
+
+    @include poly-fluid-sizing("--font-size", $mapFontSize);
+
+    @media (max-width: 1024px) and (orientation: portrait) {
+        @include poly-fluid-sizing("--font-size", $mapFontSizePt);
+    }
+
+    line-height: 1.25;
+    font-weight: $font-weight-main;
+    font-size: var(--font-size) !important;
+
+    p,
+    span {
+        font-size: var(--font-size);
+        line-height: 1.25;
+    }
+}

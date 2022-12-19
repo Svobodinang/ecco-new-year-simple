@@ -1,0 +1,7 @@
+#tpl {
+    .box,
+    .section--box {
+        max-width: calc(1px * #{$maxWidthDp});
+        margin: 0 auto;
+    }
+}

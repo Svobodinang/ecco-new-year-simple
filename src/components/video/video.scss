@@ -1,0 +1,14 @@
+#tpl {
+    .video {
+        width: min(1920px, vw(1920));
+        height: min(780px, vw(780));
+        margin-bottom: rem(48);
+        margin-top: rem(-1);
+
+        @media (--viewport-mobile-pt) {
+            width: vw(375, true);
+            height: vw(375, true);
+            margin-bottom: rem(34, true);
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "title": "TITLE",
+    "subtitle": "subtitle",
+    "video": {
+        "link": "https://kinescopecdn.net/3cf9507f-7fc2-4434-bac9-5c0185a3b7d9/videos/fc6b07e2-4c93-4d4b-af90-072d57e68dd1/mp4/5e4d070f-280d-4695-b39b-b183016b80af/9f5b4c94-72f5-4c68-bbba-d546dbbad9e0.mp4",
+        "poster": "video.jpg",
+        "ptLink": "https://kinescopecdn.net/3cf9507f-7fc2-4434-bac9-5c0185a3b7d9/videos/2eca1ee8-ad82-45b7-bf04-59e755373356/mp4/4d1bbe2c-cc8e-4795-a01b-440150d47ae0/05f98870-71e1-4cc0-8d7a-ac6a8af4e6ec.mp4",
+        "posterPt": "video-pt.jpg"
+    },
+    "goods": [
+        {
+            "text": "text",
+            "price": "price",
+            "link": "/",
+            "img": {
+                "src": "goods-1.jpg",
+                "alt": "товар"
+            }
+        },
+        {
+            "text": "text",
+            "price": "price",
+            "link": "/",
+            "img": {
+                "src": "goods-1.jpg",
+                "alt": "товар"
+            }
+        },
+        {
+            "text": "text",
+            "price": "price",
+            "link": "/",
+            "img": {
+                "src": "goods-1.jpg",
+                "alt": "товар"
+            }
+        },
+        {
+            "text": "text",
+            "price": "price",
+            "link": "/",
+            "img": {
+                "src": "goods-1.jpg",
+                "alt": "товар"
+            }
+        },
+        {
+            "text": "text",
+            "price": "price",
+            "link": "/",
+            "img": {
+                "src": "goods-1.jpg",
+                "alt": "товар"
+            }
+        },
+        {
+            "text": "text",
+            "price": "price",
+            "link": "/",
+            "img": {
+                "src": "goods-1.jpg",
+                "alt": "товар"
+            }
+        }
+    ]
+}

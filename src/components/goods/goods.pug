@@ -1,0 +1,15 @@
+mixin goods(goodsData)
+    include ../ui/button/button.pug
+    .section-goods.box.swiper-goods
+        .swiper-wrapper
+            each card in goodsData
+                .section-goods__card.swiper-slide
+                    .section-goods__img-box
+                        img.section-goods__img(src=`~assets/images/${card.img.src}`, alt=card.img.alt)
+                        a.section-goods__link(href=card.link aria-label="Посмотреть товар")
+                    p.small!=card.text
+                    p.small!=card.price
+                    +button("Смотреть", card.link, 'pt-transparent')
+        .section-goods__pagination.swiper-pagination
+        .section-goods__navigation.section-goods__navigation--next
+        .section-goods__navigation.section-goods__navigation--prev

@@ -1,0 +1,51 @@
+#tpl {
+    .button {
+        $fs: 20;
+
+        display: inline-block;
+        box-sizing: border-box;
+        text-decoration: unset;
+        font-size: rem($fs);
+        padding: em(15, $fs) em(56, $fs);
+        border: min(em(1, $fs), 1px) solid $color-text;
+        border-radius: em(40, $fs);
+        text-align: center;
+        transition: background-color 0.35s ease, color 0.35s ease;
+        background-color: transparent;
+
+        &:hover {
+            background-color: $color-text;
+            color: $color-light;
+        }
+
+        @media (--viewport-mobile) {
+            background-color: $color-text;
+            color: $color-light;
+            width: 100%;
+            font-size: rem(15, true);
+            padding: em(20, $fs) em(56, $fs);
+            font-weight: 600;
+            min-height: rem(48, true);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &.pt-transparent {
+            @media (--viewport-mobile) {
+                background-color: unset;
+                color: $color-text;
+            }
+        }
+
+        &.bg-dark {
+            background-color: $color-text;
+            color: $color-light;
+
+            &:hover {
+                background-color: $color-light;
+                color: $color-text;
+            }
+        }
+    }
+}
