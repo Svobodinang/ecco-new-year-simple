@@ -1,0 +1,13 @@
+section.first-section
+    .first-section__intro-box
+        .decor-box.first-section__decor-box
+        .first-section__intro
+            img.first-section__main-img.img(src="~assets/images/1section-main.jpg", alt="Молодые люди сидят на диване")
+            .first-section__rect
+                .first-section__rect-item.first-section__rect-text.first-section__rect-text--title
+                    h2!=data.firstSection.title
+                img.first-section__rect-item.img(src="~assets/images/rect-1.jpg", alt="Туфля лодочка")
+                img.first-section__rect-item.img(src="~assets/images/rect-2.jpg", alt="Туфля")
+                .first-section__rect-item.first-section__rect-text
+                    p!=data.firstSection.text
+    +goods(data.firstSection.goods)

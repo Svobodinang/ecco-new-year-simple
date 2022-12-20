@@ -1,50 +1,47 @@
 #tpl {
     .button {
-        $fs: 20;
+        $fs: 16.67;
 
         display: inline-block;
         box-sizing: border-box;
         text-decoration: unset;
         font-size: rem($fs);
-        padding: em(15, $fs) em(56, $fs);
-        border: min(em(1, $fs), 1px) solid $color-text;
-        border-radius: em(40, $fs);
+        padding: em(17.9, $fs) em(60, $fs);
+        border: min(em(1.2, $fs), 1.2px) solid $color-light;
         text-align: center;
         transition: background-color 0.35s ease, color 0.35s ease;
         background-color: transparent;
+        text-transform: uppercase;
+        color: $color-light;
 
         &:hover {
-            background-color: $color-text;
-            color: $color-light;
+            background-color: $color-light;
+            color: $color-accent;
         }
 
         @media (--viewport-mobile) {
-            background-color: $color-text;
-            color: $color-light;
             width: 100%;
-            font-size: rem(15, true);
-            padding: em(20, $fs) em(56, $fs);
-            font-weight: 600;
-            min-height: rem(48, true);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            font-size: rem(14, true);
+            padding: rem(15, true) rem(10, true);
+            line-height: 1;
         }
 
-        &.pt-transparent {
-            @media (--viewport-mobile) {
-                background-color: unset;
-                color: $color-text;
-            }
+        &.fix-w {
+            width: em(369.85, $fs);
         }
 
-        &.bg-dark {
-            background-color: $color-text;
-            color: $color-light;
+        &.accent {
+            background-color: $color-accent;
+            border-color: $color-accent;
+            font-size: rem(14);
+            padding: em(15, 14) em(60, 14);
 
             &:hover {
-                background-color: $color-light;
-                color: $color-text;
+                background-color: transparent;
+            }
+
+            @media (--viewport-mobile-pt) {
+                font-size: rem(14, true);
             }
         }
     }

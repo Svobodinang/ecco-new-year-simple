@@ -1,10 +1,17 @@
 article#tpl
-    head
-        include components/meta.pug
-    //- include some components
-    include components/goods/goods.pug
-    include components/ui/button/button.pug
-    include components/video/video.pug
-    //- +goods(data.goods)
-    //- +button("Пример кнопки", '/', 'pt-transparent')
+    .box
+        head
+            include components/meta.pug
+        //- include some components
+        include components/goods/goods.pug
+        include components/ui/button/button.pug
+        include components/video/video.pug
+        include components/lead/lead.pug
+        include components/firstSection/firstSection.pug
+        include components/section/section.pug
+        each sectionData in data.sections
+            +section(sectionData)
+        
+        //- +goods(data.goods)
+        //- +button("Пример кнопки", '/', 'pt-transparent')
 

@@ -1,0 +1,13 @@
+#tpl {
+    .snowflake {
+        $w: 76.08;
+
+        width: em($w, $w);
+        height: em($w, $w);
+        fill: #f2ece1;
+
+        &.dark-pink {
+            fill: #8a0f51;
+        }
+    }
+}

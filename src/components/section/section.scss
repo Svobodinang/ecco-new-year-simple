@@ -1,0 +1,112 @@
+#tpl {
+    .section {
+        &__lead-wrapper {
+            width: 100%;
+            position: relative;
+            background-color: $color-accent;
+        }
+
+        &__decor {
+            background-image: url("~assets/images/snowflakes-section-1.png");
+
+            @media (--viewport-mobile-pt) {
+                display: none;
+            }
+        }
+
+        &__lead {
+            width: min(rem(1322), 1322px);
+            max-width: 100%;
+            margin: 0 auto;
+            display: flex;
+            gap: rem(45);
+            justify-content: flex-start;
+            padding-right: rem(10);
+            align-items: center;
+
+            &.img-right {
+                justify-content: flex-end;
+                padding-right: 0;
+                padding-left: rem(10);
+
+                @media (--viewport-mobile-pt) {
+                    padding-left: 0;
+                }
+
+                .section__text-block {
+                    order: 1;
+
+                    @media (--viewport-mobile-pt) {
+                        order: unset;
+                    }
+                }
+
+                .section__img {
+                    order: 2;
+
+                    @media (--viewport-mobile-pt) {
+                        order: unset;
+                    }
+                }
+
+                .section__decor {
+                    background-image: url("~assets/images/snowflakes-section-2.png");
+                }
+            }
+
+            &.small-text {
+                .section__text-block {
+                    max-width: rem(350);
+
+                    @media (--viewport-mobile-pt) {
+                        max-width: unset;
+                    }
+                }
+            }
+
+            @media (--viewport-mobile-pt) {
+                width: 100%;
+                flex-wrap: wrap;
+                padding: 0;
+                gap: 0;
+            }
+        }
+
+        &__img {
+            flex-shrink: 1;
+            height: min(vw(510), 510px);
+            width: auto;
+            object-fit: cover;
+
+            @media (--viewport-mobile-pt) {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__text-block {
+            max-width: rem(432);
+            color: $color-light;
+
+            @media (--viewport-mobile-pt) {
+                max-width: unset;
+                text-align: center;
+                margin: 0 auto;
+                padding: rem(32, true) rem(43, true) rem(45, true);
+            }
+        }
+
+        &__title {
+            font-size: rem(26);
+            font-family: $font-title;
+            font-weight: $font-weight-title;
+            text-transform: uppercase;
+            margin-bottom: rem(11);
+
+            @media (--viewport-mobile-pt) {
+                font-size: rem(24, true);
+                margin-bottom: rem(14, true);
+            }
+        }
+    }
+}

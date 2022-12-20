@@ -1,0 +1,7 @@
+.lead
+    .decor-box.lead__decor-box
+    h1.h1.title!=data.lead.title
+    p.lead__text!=data.lead.subtitle
+    .lead__buttons
+        each buttonData in data.lead.buttons
+            +button(buttonData.text, buttonData.link, 'fix-w')

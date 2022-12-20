@@ -1,14 +1,26 @@
 #tpl {
-    .video {
+    .video-box {
         width: min(1920px, vw(1920));
-        height: min(780px, vw(780));
-        margin-bottom: rem(48);
-        margin-top: rem(-1);
+        height: min(450px, vw(450));
+        overflow: hidden;
+        position: relative;
 
         @media (--viewport-mobile-pt) {
-            width: vw(375, true);
-            height: vw(375, true);
-            margin-bottom: rem(34, true);
+            width: min(375px, vw(375, true));
+            height: min(303px, vw(303, true));
+        }
+    }
+
+    .video {
+        width: 100%;
+        height: min(1080px, vw(1080));
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+
+        @media (--viewport-mobile-pt) {
+            height: min(468px, vw(468, true));
         }
     }
 }

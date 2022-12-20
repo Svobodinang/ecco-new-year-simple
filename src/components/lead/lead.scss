@@ -1,0 +1,84 @@
+#tpl {
+    .lead {
+        background-color: $color-accent;
+        color: $color-light;
+        text-align: center;
+        padding: rem(26) rem(20) rem(67);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+
+        @media (--viewport-mobile-pt) {
+            padding: rem(38, true) rem(32, true) rem(27, true);
+        }
+
+        .h1 {
+            font-size: rem(50.62);
+            text-transform: uppercase;
+            margin-bottom: rem(21);
+
+            @media (--viewport-mobile-pt) {
+                font-size: rem(24, true);
+                margin-bottom: rem(14, true);
+            }
+        }
+
+        &__text {
+            font-size: rem(33.75);
+            margin-bottom: rem(65);
+            max-width: rem(935);
+
+            @media (--viewport-mobile-pt) {
+                font-size: rem(16, true);
+                margin-bottom: rem(34, true);
+                max-width: unset;
+                max-width: rem(289, true);
+            }
+        }
+
+        &__buttons {
+            max-width: rem(769);
+            gap: rem(19.9);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-transform: uppercase;
+
+            @media (--viewport-mobile) {
+                justify-content: center;
+                max-width: unset;
+                gap: rem(17, true);
+            }
+
+            .button:nth-child(1) {
+                order: 1;
+            }
+
+            .button:nth-child(2) {
+                order: 3;
+            }
+
+            .button:nth-child(3) {
+                order: 2;
+            }
+
+            .button:nth-child(4) {
+                order: 4;
+            }
+        }
+
+        &__decor-box {
+            background-image: url("~assets/images/snowflakes-lead.png");
+            height: 100%;
+            width: rem(1920);
+            left: 50%;
+            transform: translateX(-50%);
+
+            @media (--viewport-mobile-pt) {
+                background-image: url("~assets/images/snowflakes-lead-pt.png");
+            }
+        }
+    }
+}

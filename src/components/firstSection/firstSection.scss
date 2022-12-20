@@ -1,0 +1,89 @@
+#tpl {
+    .first-section {
+        position: relative;
+
+        &__decor-box {
+            background-image: url("~assets/images/snowflakes-1section-lead.png");
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &__intro-box {
+            position: relative;
+        }
+
+        &__intro {
+            max-width: rem(1324);
+            margin: 0 auto;
+            padding-left: rem(150);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            color: $color-light;
+            margin-top: -1px;
+
+            @media (--viewport-desktop-local) {
+                padding-left: 0;
+            }
+
+            @media (--viewport-mobile-pt) {
+                height: auto;
+                max-width: 100%;
+            }
+        }
+
+        &__main-img {
+            order: 2;
+            width: auto;
+            flex-grow: 1;
+            object-position: center 66%;
+            height: rem(512);
+
+            @media (--viewport-mobile-pt) {
+                order: 1;
+                height: vw(372, true);
+            }
+        }
+
+        &__rect {
+            flex-shrink: 0;
+            order: 1;
+            display: flex;
+            flex-wrap: wrap;
+            width: rem(512);
+            height: auto;
+
+            @media (--viewport-mobile-pt) {
+                order: 2;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__rect-item {
+            width: 50%;
+            height: rem(256);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: $color-accent;
+
+            @media (--viewport-mobile-pt) {
+                height: rem(188, true);
+            }
+        }
+
+        &__rect-text {
+            padding: 0 rem(19);
+
+            @media (--viewport-mobile-pt) {
+                padding: 0 rem(14, true);
+            }
+
+            &--title {
+                text-transform: uppercase;
+            }
+        }
+    }
+}

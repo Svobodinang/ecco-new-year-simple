@@ -1,65 +1,318 @@
 {
-    "title": "TITLE",
-    "subtitle": "subtitle",
     "video": {
         "link": "https://kinescopecdn.net/3cf9507f-7fc2-4434-bac9-5c0185a3b7d9/videos/fc6b07e2-4c93-4d4b-af90-072d57e68dd1/mp4/5e4d070f-280d-4695-b39b-b183016b80af/9f5b4c94-72f5-4c68-bbba-d546dbbad9e0.mp4",
         "poster": "video.jpg",
         "ptLink": "https://kinescopecdn.net/3cf9507f-7fc2-4434-bac9-5c0185a3b7d9/videos/2eca1ee8-ad82-45b7-bf04-59e755373356/mp4/4d1bbe2c-cc8e-4795-a01b-440150d47ae0/05f98870-71e1-4cc0-8d7a-ac6a8af4e6ec.mp4",
         "posterPt": "video-pt.jpg"
     },
-    "goods": [
+    "lead": {
+        "title": "Какие у&nbsp;вас планы на&nbsp;праздники?",
+        "subtitle": "Отдых дома, встречи с друзьями или прогулки с семьей? Мы продумали все возможные варианты, чтобы каникулы были уютными.",
+        "buttons": [
+            {
+                "text": "ДЛЯ ВСТРЕЧ С&nbsp;ДРУЗЬЯМИ",
+                "link": "https://www.ecco.ru/collections/formal/"
+            },
+            {
+                "text": "ДЛЯ ОТДЫХА ДОМА",
+                "link": "https://www.ecco.ru/collections/home/"
+            },
+            {
+                "text": "ДЛЯ ВЫХОДНЫХ НА&nbsp;ДАЧЕ",
+                "link": "https://www.ecco.ru/collections/holiday-house/"
+            },
+            {
+                "text": "ДЛЯ отдыха на&nbsp;природе",
+                "link": "https://www.ecco.ru/collections/outdoor/"
+            }
+        ]
+    },
+    "firstSection": {
+        "title": "Для встреч с&nbsp;друзьями",
+        "text": "Красивая и&nbsp;удобная обувь для похода в&nbsp;ресторан, театр или на&nbsp;корпоратив.",
+        "goods": {
+            "id": "firstSection",
+            "men": [
+                {
+                    "text": "text",
+                    "price": "price",
+                    "link": "https://ecco.ru/catalog/512734/01001",
+                    "img": {
+                        "src": "goods-1-men.jpg",
+                        "alt": "товар"
+                    }
+                },
+                {
+                    "text": "text",
+                    "price": "price",
+                    "link": "https://ecco.ru/catalog/521834/01001",
+                    "img": {
+                        "src": "goods-1-men.jpg",
+                        "alt": "товар"
+                    }
+                },
+                {
+                    "text": "text",
+                    "price": "price",
+                    "link": "https://ecco.ru/catalog/521854/01001",
+                    "img": {
+                        "src": "goods-1-men.jpg",
+                        "alt": "товар"
+                    }
+                }
+            ],
+            "women": [
+                {
+                    "text": "text",
+                    "price": "price",
+                    "link": "https://ecco.ru/catalog/291003/05646",
+                    "img": {
+                        "src": "goods-1.jpg",
+                        "alt": "товар"
+                    }
+                },
+                {
+                    "text": "text",
+                    "price": "price",
+                    "link": "https://ecco.ru/catalog/204103/01001",
+                    "img": {
+                        "src": "goods-1.jpg",
+                        "alt": "товар"
+                    }
+                },
+                {
+                    "text": "text",
+                    "price": "price",
+                    "link": "https://ecco.ru/catalog/207713/01001/",
+                    "img": {
+                        "src": "goods-1.jpg",
+                        "alt": "товар"
+                    }
+                }
+            ],
+            "button": {
+                "link": "https://www.ecco.ru/collections/formal/"
+            }
+        }
+    },
+    "sections": [
         {
-            "text": "text",
-            "price": "price",
-            "link": "/",
+            "type": "img-right",
+            "title": "Для отдыха дома",
+            "text": "Уютная обувь из&nbsp;натуральных материалов для просмотра любимого рождественского фильма или встречи гостей.",
             "img": {
-                "src": "goods-1.jpg",
-                "alt": "товар"
+                "src": "section-2.jpg",
+                "alt": "Домашние ботиночки ecco"
+            },
+            "goods": {
+                "id": "section-2",
+                "men": [
+                    {
+                        "text": "text",
+                        "price": "price",
+                        "link": "https://www.ecco.ru/catalog/523804/02001/",
+                        "img": {
+                            "src": "goods-1-men.jpg",
+                            "alt": "товар"
+                        }
+                    },
+                    {
+                        "text": "text",
+                        "price": "price",
+                        "link": "https://www.ecco.ru/catalog/531834/02482/",
+                        "img": {
+                            "src": "goods-1-men.jpg",
+                            "alt": "товар"
+                        }
+                    },
+                    {
+                        "text": "text",
+                        "price": "price",
+                        "link": "https://www.ecco.ru/catalog/531834/02308/",
+                        "img": {
+                            "src": "goods-1-men.jpg",
+                            "alt": "товар"
+                        }
+                    }
+                ],
+                "women": [
+                    {
+                        "text": "text",
+                        "price": "price",
+                        "link": "https://www.ecco.ru/catalog/231873/01378/",
+                        "img": {
+                            "src": "goods-1.jpg",
+                            "alt": "товар"
+                        }
+                    },
+                    {
+                        "text": "text",
+                        "price": "price",
+                        "link": "https://www.ecco.ru/catalog/215303/02211/",
+                        "img": {
+                            "src": "goods-1.jpg",
+                            "alt": "товар"
+                        }
+                    },
+                    {
+                        "text": "text",
+                        "price": "price",
+                        "link": "https://www.ecco.ru/catalog/215703/02001/",
+                        "img": {
+                            "src": "goods-1.jpg",
+                            "alt": "товар"
+                        }
+                    }
+                ],
+                "button": {
+                    "link": "https://www.ecco.ru/collections/home/"
+                }
             }
         },
         {
-            "text": "text",
-            "price": "price",
-            "link": "/",
+            "type": "",
+            "title": "Для выходных на&nbsp;даче",
+            "text": "Когда хочется дышать морозным воздухом, готовить ужин на&nbsp;мангале и&nbsp;любоваться звездным небом.",
             "img": {
-                "src": "goods-1.jpg",
-                "alt": "товар"
+                "src": "section-3.jpg",
+                "alt": "Девушка около загородного дома в обуви ecco"
+            },
+            "goods": {
+                "id": "section-3",
+                "men": [
+                    {
+                        "text": "text",
+                        "price": "price",
+                        "link": "https://www.ecco.ru/catalog/820284/00543",
+                        "img": {
+                            "src": "goods-1-men.jpg",
+                            "alt": "товар"
+                        }
+                    },
+                    {
+                        "text": "text",
+                        "price": "price",
+                        "link": "https://www.ecco.ru/catalog/523254/02038",
+                        "img": {
+                            "src": "goods-1-men.jpg",
+                            "alt": "товар"
+                        }
+                    },
+                    {
+                        "text": "text",
+                        "price": "price",
+                        "link": "https://www.ecco.ru/catalog/523254/02244",
+                        "img": {
+                            "src": "goods-1-men.jpg",
+                            "alt": "товар"
+                        }
+                    }
+                ],
+                "women": [
+                    {
+                        "text": "text",
+                        "price": "price",
+                        "link": "https://www.ecco.ru/catalog/420173/02163",
+                        "img": {
+                            "src": "goods-1.jpg",
+                            "alt": "товар"
+                        }
+                    },
+                    {
+                        "text": "text",
+                        "price": "price",
+                        "link": "https://www.ecco.ru/catalog/420183/60422",
+                        "img": {
+                            "src": "goods-1.jpg",
+                            "alt": "товар"
+                        }
+                    },
+                    {
+                        "text": "text",
+                        "price": "price",
+                        "link": "https://www.ecco.ru/catalog/450423/02578",
+                        "img": {
+                            "src": "goods-1.jpg",
+                            "alt": "товар"
+                        }
+                    }
+                ],
+                "button": {
+                    "link": "https://www.ecco.ru/collections/holiday-house/"
+                }
             }
         },
         {
-            "text": "text",
-            "price": "price",
-            "link": "/",
+            "type": "small-text",
+            "title": "Для активного отдыха на&nbsp;природе",
+            "text": "Покататься с&nbsp;горки, слепить с&nbsp;детьми снеговика или погулять по&nbsp;зимнему лесу&nbsp;&mdash; в&nbsp;этих ботинках вам точно будет тепло.",
             "img": {
-                "src": "goods-1.jpg",
-                "alt": "товар"
-            }
-        },
-        {
-            "text": "text",
-            "price": "price",
-            "link": "/",
-            "img": {
-                "src": "goods-1.jpg",
-                "alt": "товар"
-            }
-        },
-        {
-            "text": "text",
-            "price": "price",
-            "link": "/",
-            "img": {
-                "src": "goods-1.jpg",
-                "alt": "товар"
-            }
-        },
-        {
-            "text": "text",
-            "price": "price",
-            "link": "/",
-            "img": {
-                "src": "goods-1.jpg",
-                "alt": "товар"
+                "src": "section-4.jpg",
+                "alt": "Молодая пара гуляет на природе в обуви ecco"
+            },
+            "goods": {
+                "id": "section-4",
+                "men": [
+                    {
+                        "text": "text",
+                        "price": "price",
+                        "link": "https://www.ecco.ru/catalog/833964/60505",
+                        "img": {
+                            "src": "goods-1-men.jpg",
+                            "alt": "товар"
+                        }
+                    },
+                    {
+                        "text": "text",
+                        "price": "price",
+                        "link": "https://www.ecco.ru/catalog/450444/53779",
+                        "img": {
+                            "src": "goods-1-men.jpg",
+                            "alt": "товар"
+                        }
+                    },
+                    {
+                        "text": "text",
+                        "price": "price",
+                        "link": "https://www.ecco.ru/catalog/833894/52012",
+                        "img": {
+                            "src": "goods-1-men.jpg",
+                            "alt": "товар"
+                        }
+                    }
+                ],
+                "women": [
+                    {
+                        "text": "text",
+                        "price": "price",
+                        "link": "https://www.ecco.ru/catalog/420163/60411",
+                        "img": {
+                            "src": "goods-1.jpg",
+                            "alt": "товар"
+                        }
+                    },
+                    {
+                        "text": "text",
+                        "price": "price",
+                        "link": "https://www.ecco.ru/catalog/203203/60418",
+                        "img": {
+                            "src": "goods-1.jpg",
+                            "alt": "товар"
+                        }
+                    },
+                    {
+                        "text": "text",
+                        "price": "price",
+                        "link": "https://www.ecco.ru/catalog/420113/02303",
+                        "img": {
+                            "src": "goods-1.jpg",
+                            "alt": "товар"
+                        }
+                    }
+                ],
+                "button": {
+                    "link": "https://www.ecco.ru/collections/outdoor/"
+                }
             }
         }
     ]

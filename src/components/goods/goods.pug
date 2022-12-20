@@ -1,15 +1,38 @@
 mixin goods(goodsData)
     include ../ui/button/button.pug
-    .section-goods.box.swiper-goods
-        .swiper-wrapper
-            each card in goodsData
-                .section-goods__card.swiper-slide
-                    .section-goods__img-box
-                        img.section-goods__img(src=`~assets/images/${card.img.src}`, alt=card.img.alt)
-                        a.section-goods__link(href=card.link aria-label="Посмотреть товар")
-                    p.small!=card.text
-                    p.small!=card.price
-                    +button("Смотреть", card.link, 'pt-transparent')
-        .section-goods__pagination.swiper-pagination
-        .section-goods__navigation.section-goods__navigation--next
-        .section-goods__navigation.section-goods__navigation--prev
+    .goods-container
+        .goods-decor.decor-box(aria-hidden)
+
+        .inputs-wrapper(id=`input-wrapper-${goodsData.id}`)
+            .input-group
+                input(type="radio", name=`sex-${goodsData.id}`, value="men" id=`men-${goodsData.id}` class="radio-input" goodsId=goodsData.id checked)
+                label(for=`men-${goodsData.id}`) Мужчинам
+            .input-group
+                input(type="radio", name=`sex-${goodsData.id}`, value="women" id=`women-${goodsData.id}` class="radio-input" goodsId=goodsData.id)
+                label(for=`women-${goodsData.id}`) Женщинам
+
+        .goods-wrapper(id=`goods-${goodsData.id}`)
+            .section-goods.swiper-goods.goods-men
+                .swiper-wrapper
+                    each card in goodsData.men
+                        .section-goods__card.swiper-slide
+                            .section-goods__img-box
+                                img.section-goods__img(src=`~assets/images/${card.img.src}`, alt=card.img.alt)
+                                a.section-goods__link(href=card.link aria-label="Посмотреть товар")
+                            p.small!=card.text
+                            //- p.small!=card.price
+                            //- +button("Смотреть", card.link, 'pt-transparent')
+                .section-goods__pagination.swiper-pagination
+            .section-goods.swiper-goods.goods-women
+                .swiper-wrapper
+                    each card in goodsData.women
+                        .section-goods__card.swiper-slide
+                            .section-goods__img-box
+                                img.section-goods__img(src=`~assets/images/${card.img.src}`, alt=card.img.alt)
+                                a.section-goods__link(href=card.link aria-label="Посмотреть товар")
+                            p.small!=card.text
+                            //- p.small!=card.price
+                            //- +button("Смотреть", card.link, 'pt-transparent')
+                .section-goods__pagination.swiper-pagination
+        
+        +button("Смотреть всю коллекцию", goodsData.button.link, 'accent')
