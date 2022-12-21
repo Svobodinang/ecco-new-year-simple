@@ -40,10 +40,10 @@
 
         &__buttons {
             max-width: rem(769);
-            gap: rem(19.9);
+            gap: rem(19.9) rem(29);
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
             text-transform: uppercase;
 
             @media (--viewport-mobile) {
